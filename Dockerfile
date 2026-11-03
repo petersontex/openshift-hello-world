@@ -1,4 +1,4 @@
-FROM texpeterson/golang:1.17
+FROM golang:latest
 
 ADD src/hello-world.go hello-world.go
 
