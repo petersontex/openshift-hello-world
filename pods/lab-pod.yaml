@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: lab-pod
+  labels:
+    app: lab-pod
+spec:
+  containers:
+  - env:
+    - name: CUSTOM_MESSAGE
+      value: Hi! I'm a custom environment variable
+    image: texpeterson/practicalopenshift:latest
+    #quay.io/practicalopenshift/hello-world
+    imagePullPolicy: Always
+    name: hello-world-override
+    resources: {}
